@@ -1,0 +1,96 @@
+/* Selector Universal 
+
+Lo utilizamos para quitar los valores que por defecto asigna el navegador
+
+Recurso box sizing:
+ https://dev.to/lupitacode/que-es-el-box-sizing-en-css-2pi9#:~:text=Border%20box%20hace%20que%20los,box%20model%20no%20se%20rompa.&text=Como%20puedes%20ver%20en%20la,height%20(100px%20x%20120px).
+
+
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+
+    /* Valor por defecto de esta propiedad es content-box */
+    box-sizing: border-box;
+}
+
+
+
+
+/* CONFIGURACIÓN DE LOS ELEMENTOS */
+
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    /* Grosor de las letra */
+    font-weight: 400;
+
+    /* Dimensión de la letra */
+    font-size: 16px;
+
+    /* Distancia a los elementos inferiores y superiores */
+    line-height: 1.7;
+
+    /* color de texto */
+    color: black;
+
+    /* Pading */
+    padding: 30px;
+}
+
+
+/* HEADER CARACTERISTICAS */
+
+header{
+
+    /* vh hace referencia a la ventana del navegador en %*/
+    height: 95vh;
+
+    /* 1. Podemos agregar gradientes a la imagen mediante la propiedad linear-gradient(
+        - lugar donde debe comenzar (por ejemplo to rigth, to top, to bottom etc, etc) y hacia donde se dirige
+        - primerColor,
+        - segundoColor
+        ) */
+    /* 2. PodemosCargar imagen como fondo mediante la propiedad URL */
+    background-image:linear-gradient(
+        to right bottom,
+        rgba(0, 0, 0, 0.584),
+        rgba(255, 255, 255, 0.458)) 
+        ,url(../img/fondoUrbano.jpg);
+
+
+    /* Tamaño del fondo, cover intentara acomodar el elemento sin importar las dimensiones de la caja*/
+    background-size: cover;
+
+    /* Parte de la imagen que permanecera en pantalla, entre las opciones está, TOP, BOTTOM, CENTER, etc */
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* EJEMPLO CONTENT-BOX */
+/* .content-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 200px;
+
+    padding: 30px;
+    background: red;
+} */
