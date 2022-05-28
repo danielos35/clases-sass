@@ -47,6 +47,9 @@ body{
 
 header{
 
+    /* Position relative, para que sus hijos partan de esta medición */
+    position: relative;
+
     /* vh hace referencia a la ventana del navegador en %*/
     height: 95vh;
 
@@ -68,8 +71,30 @@ header{
 
     /* Parte de la imagen que permanecera en pantalla, entre las opciones está, TOP, BOTTOM, CENTER, etc */
     background-position: center;
+
+    
+    
+    /* Herramienta para la creación de imagenes */
+    /* https://bennettfeely.com/clippy/ */
+
+    /* Sobreponer un poligono sobre la imagenl, cada argumento son las diferentes esquinas del poligono en su eje x y y
+    ver carpeta 00 recursos para entender la explicación */
+
+
+
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 22vw 100%);
 }
 
+
+.logo-box{
+    position: absolute;
+    top:40px;
+    right: 40px;
+}
+
+.logo{
+    height: 80px;
+}
 
 
 
