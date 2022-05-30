@@ -97,6 +97,49 @@ header{
 }
 
 
+/* Titulo de la pagina................................................ */
+
+.titulo-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* background: red; */
+    transform: translate(-50%, -50%);
+}
+
+
+.nombre-pagina{
+    color: #fff;
+
+    /*Transformar en mayuscula*/
+    text-transform: uppercase;
+    /* background: red; */
+}
+
+.nombre-pagina-titulo{
+
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    /* background: green; */
+
+    /* ESPACIOS ENTRE LETRAS */
+    letter-spacing: 10px;
+
+}
+
+.nombre-pagina-subtitulo{
+    
+    display: block;
+    /* background: yellow; */
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 23px;
+
+}
+
+
+
 
 
 
