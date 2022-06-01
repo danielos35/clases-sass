@@ -96,6 +96,10 @@ header{
     height: 80px;
 }
 
+.logo:hover{
+    animation: movimientoPrincipal 2s ease;
+}
+
 
 /* Titulo de la pagina................................................ */
 
@@ -105,7 +109,10 @@ header{
     left: 50%;
     /* background: red; */
     transform: translate(-50%, -50%);
+
 }
+
+
 
 
 .nombre-pagina{
@@ -114,6 +121,10 @@ header{
     /*Transformar en mayuscula*/
     text-transform: uppercase;
     /* background: red; */
+
+
+    /* Corregir temblores en animaciónes */
+    backface-visibility: hidden;
 }
 
 .nombre-pagina-titulo{
@@ -126,6 +137,20 @@ header{
     /* ESPACIOS ENTRE LETRAS */
     letter-spacing: 10px;
 
+    /* Animacion a usar */
+    animation-name: movimientoPrincipal;
+
+    /* Tiempo de duracion de la animación */
+    animation-duration: 2s;
+
+    /* Tiempo antes de que la animación empiece a ejecutarse */
+    animation-delay: 0s;
+
+    /* Veces en la que se ejecutará la animación */
+    animation-iteration-count: 1;
+
+    /* Forma en la que se desplazara el tiempo durante la animación, por ejemplo aceleración ETC */
+    animation-timing-function: ease;
 }
 
 .nombre-pagina-subtitulo{
@@ -136,10 +161,50 @@ header{
     font-weight: 200;
     letter-spacing: 23px;
 
+
+    /*Todas las propiedades en una sola linea */
+    animation: movimientoSecundario 2s ease;
+    /* animation-name: movimientoSecundario;
+    animation-duration: 2s;
+    animation-timing-function: ease; */
 }
 
 
+/* CREACIÓN DE ANIMACIONES */
+@keyframes movimientoPrincipal{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
 
+        /* Rotación */
+        transform: rotate(-50deg);
+    }
+
+    80%{
+        transform: translateX(20px);
+    }
+
+    100%{
+        	opacity: 1;
+            transform: translate(0);
+    }
+}
+
+@keyframes movimientoSecundario{
+    0%{
+        opacity: 0;
+        transform: translateX(100px) rotate(-50deg);
+    }
+
+    80%{
+        transform: translateX(-20px);
+    }
+
+    100%{
+        	opacity: 1;
+            transform: translate(0);
+    }
+}
 
 
 
