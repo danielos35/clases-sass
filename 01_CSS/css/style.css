@@ -110,6 +110,9 @@ header{
     /* background: red; */
     transform: translate(-50%, -50%);
 
+    /* Los Href funcionan como texto, por eso esto pueden ser centrados con tal  */
+    text-align: center;
+
 }
 
 
@@ -125,6 +128,8 @@ header{
 
     /* Corregir temblores en animaciónes */
     backface-visibility: hidden;
+
+    margin-bottom: 40px;
 }
 
 .nombre-pagina-titulo{
@@ -227,3 +232,49 @@ header{
     padding: 30px;
     background: red;
 } */
+
+
+
+/* BOTÓN */
+
+/* 
+Pseudoclase.
+- Son un estado especial del selector
+
+Link.
+- Elementos que no han sido manipulados, ver documentación
+
+
+*/
+
+.btn:link, 
+.btn:visited{
+
+    /* Convertir en mayusculas */
+    text-transform: uppercase;
+
+    /* Quitar subrayado de un a href */
+    text-decoration: none;
+
+    padding: 15px 40px;
+
+    display: inline-block;
+}
+
+
+/* Colocar el raton sobre el elemento */
+.btn:hover{
+    transform: translateY(-3px);
+}
+
+/* Al hacer clic en el elemento */
+.btn:active{
+    transform: translateY(-1px);
+}
+
+.btn-white{
+    background-color: white;
+
+    color:#777;
+    
+}
