@@ -319,3 +319,16 @@ Link.
     transform: scaleX(1.11) scaleY(1.6);
     opacity: 0;
 }
+
+.btn-animation{
+
+    /* DIRECTIVAS PARA UNA ANIMACIÓN EN UNA SOLA LINEA
+    - Nombre de la animación
+    - Duración
+    - Timing de la animación
+    -  */
+    animation:  movimientoPrincipal .5s ease-out .75s;
+
+    /* Aplicara los estilos hasta que comience la animación */
+    animation-fill-mode: backwards;
+}
