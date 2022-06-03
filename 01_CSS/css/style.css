@@ -182,7 +182,7 @@ header{
         transform: translateX(-100px);
 
         /* Rotación */
-        transform: rotate(-50deg);
+        /* transform: rotate(-50deg); */
     }
 
     80%{
@@ -198,7 +198,7 @@ header{
 @keyframes movimientoSecundario{
     0%{
         opacity: 0;
-        transform: translateX(100px) rotate(-50deg);
+        transform: translateX(100px) ;
     }
 
     80%{
@@ -247,7 +247,9 @@ Link.
 
 */
 
-.btn:link, 
+.btn:link,
+
+/* Cuando el usuario ya ha visitado el na */ 
 .btn:visited{
 
     /* Convertir en mayusculas */
@@ -259,22 +261,61 @@ Link.
     padding: 15px 40px;
 
     display: inline-block;
+
+    /* Animaciones */
+    transition: all .2s;
+    position: relative;
 }
 
 
 /* Colocar el raton sobre el elemento */
 .btn:hover{
     transform: translateY(-3px);
+    /* Sombra */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
 }
 
 /* Al hacer clic en el elemento */
 .btn:active{
     transform: translateY(-1px);
+
+    /* Sombra */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+    
 }
+
 
 .btn-white{
     background-color: white;
 
     color:#777;
     
+}
+
+/* PSEUDOELEMENTOS
+- Nos permite diseñar ciertas partes de un elemento por separado
+*/
+
+.btn::after{
+    content: '';
+    display: inline-block;
+    /* Altura y ancho del botón */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after{
+    background-color: #fff;
+}
+
+.btn:hover::after{
+
+    /* Incrementar tamaño de un elemento */
+    transform: scaleX(1.11) scaleY(1.6);
+    opacity: 0;
 }
