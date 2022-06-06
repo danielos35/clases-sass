@@ -13,7 +13,11 @@ a{
 }
 
 #nav div.pull-rigth a.button{
-    background: orange;
+    background: red;
+}
+
+#nav div.pull-rigth a.button:hover{
+    background: green;
 }
 
 #nav a.button:hover{
