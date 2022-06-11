@@ -9,22 +9,26 @@ Recurso box sizing:
 
 */
 
-*{
+
+
+/* Configurar los pseudoelementos también es una buena practica */
+*,
+*::after,
+*::before{
     margin: 0;
     padding: 0;
 
     /* Valor por defecto de esta propiedad es content-box */
-    box-sizing: border-box;
+    box-sizing: inherit;
+
+    
+
 }
+
 
 
 /* UNDIDA RAIZ */
 
-html{
-
-    /* En este caso sabemos que 1 rem equivale exactamente a 10px */
-    font-size: 10px;
-}
 
 
 
@@ -48,7 +52,32 @@ body{
 
     /* Pading */
     padding: 3rem;
+
+    /* Es usado para la herencia de elementos como el box-sizing en toda la aplicación */
+    box-sizing: inherit;
 }
+
+html{
+
+    /* En este caso sabemos que 1 rem equivale exactamente a 10px, pero es una mala practica usarlo de esta monera, por eso se recomienda usarlo en 
+    
+    font-size: 10px;
+    % */
+
+    /* Font-size valdrá el 100% de la fuente determinada por el navegador, que suele ser normalmente de 16px
+    font-size: 100%;
+    */
+
+
+    /* En ese caso si queremos que nuestra fuente tenga un valor predeterminado como 10 px debemos tomar esos 16 px que tiene el navegador por defecto y saber a cuanto equivale 10px sobre el
+     */
+
+    font-size: 62.5%;
+
+    /*  */
+}   
+
+
 
 
 /* HEADER CARACTERISTICAS */
