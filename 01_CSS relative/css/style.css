@@ -123,24 +123,24 @@ header{
 }
 
 
-.logo-box{
+.header__logo-box{
     position: absolute;
     top:4rem;
     right: 4rem;
 }
 
-.logo{
+.header__logo{
     height: 8rem;
 }
 
-.logo:hover{
+.header__logo:hover{
     animation: movimientoPrincipal 2s ease;
 }
 
 
 /* Titulo de la pagina................................................ */
 
-.titulo-box{
+.header__titulo-box{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -169,7 +169,7 @@ header{
     margin-bottom: 4rem;
 }
 
-.nombre-pagina-titulo{
+.nombre-pagina--titulo{
 
     display: block;
     font-size: 6rem;
@@ -195,7 +195,7 @@ header{
     animation-timing-function: ease;
 }
 
-.nombre-pagina-subtitulo{
+.nombre-pagina--subtitulo{
     
     display: block;
     /* background: yellow; */
