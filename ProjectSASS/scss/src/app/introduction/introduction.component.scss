@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+// Variables
+$color-primary:red;
+$color-seconday:yellow;
+$color-tertiary:pink;
+$color-text-dark:black;
+$color-text-light:white;
+
+$with-button:150px;
+
+$time-tansicion:0.3s;
+
+nav{
+    margin: 30px;
+    background-color: $color-primary;
+    
+    &::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+
+.navigation{
+    list-style: none;
+    float: left;
+
+    li{
+        display: inline-block;
+        margin-left: 30px;
+
+        &:first-child{
+            margin: 0;
+        }
+    }
+
+    a:link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-text-dark ;
+    }
+
+}
+
+
+.buttons{
+    float: right;
+    color: black;
+}
+
+.btn-main:link,
+.btn-hot:link{
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 100px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: $with-button;
+    color: $color-text-light;
+}
+
+.btn-main{
+    &:link{
+        background-color: $color-seconday;
+        transition: $time-tansicion;
+
+    }
+
+    &:hover{
+        background-color: darken($color-seconday, 15%);
+        transition: $time-tansicion;
+    }
+}
+
+.btn-hot{
+    &:link{
+        background-color: $color-tertiary;
+        transition: $time-tansicion;
+
+    }
+
+    &:hover{
+        background-color: lighten($color-tertiary, 10%);
+        transition: $time-tansicion;
+    }
+}
