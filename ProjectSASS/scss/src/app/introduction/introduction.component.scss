@@ -14,15 +14,26 @@ $with-button:150px;
 
 $time-tansicion:0.3s;
 
-nav{
-    margin: 30px;
-    background-color: $color-primary;
-    
+@mixin clearfix {
     &::after{
         content: "";
         clear: both;
         display: table;
     }
+}
+
+@mixin style-link-text($color){
+    text-decoration: none;
+    width: $with-button;
+    color: $color;
+}
+
+nav{
+    margin: 30px;
+    background-color: $color-primary;
+
+    @include clearfix()
+
 }
 
 
@@ -40,9 +51,7 @@ nav{
     }
 
     a:link {
-        text-decoration: none;
-        text-transform: uppercase;
-        color: $color-text-dark ;
+        @include style-link-text($color-text-dark);
     }
 
 }
@@ -59,10 +68,9 @@ nav{
     display: inline-block;
     text-align: center;
     border-radius: 100px;
-    text-decoration: none;
     text-transform: uppercase;
-    width: $with-button;
-    color: $color-text-light;
+    @include style-link-text($color-text-light);
+
 }
 
 .btn-main{
@@ -90,3 +98,7 @@ nav{
         transition: $time-tansicion;
     }
 }
+
+// MIXING 
+// Es una pieza de codigo reutilizable,
+// Es una función la cual también puede aceptar argumentos
