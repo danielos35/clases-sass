@@ -35,9 +35,7 @@ $time-tansicion:0.3s;
 nav{
     margin: divide(60,2) * 1px;
     background-color: $color-primary;
-
     @include clearfix()
-
 }
 
 
@@ -66,22 +64,21 @@ nav{
     color: black;
 }
 
-.btn-main:link,
-.btn-hot:link{
+%btn-placeholder{
     padding: 10px;
     display: inline-block;
     text-align: center;
     border-radius: 100px;
     text-transform: uppercase;
     @include style-link-text($color-text-light);
-
 }
+
 
 .btn-main{
     &:link{
+        @extend %btn-placeholder;
         background-color: $color-seconday;
         transition: $time-tansicion;
-
     }
 
     &:hover{
@@ -92,9 +89,9 @@ nav{
 
 .btn-hot{
     &:link{
+        @extend %btn-placeholder;
         background-color: $color-tertiary;
         transition: $time-tansicion;
-
     }
 
     &:hover{
