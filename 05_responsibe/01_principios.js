@@ -9,7 +9,8 @@ PRINCIPIOS
 --- Permite que la pantalla se adapte al ancho de la ventana grafica actual
 ---- FLOAT LAYOUTS (es una tecnologia vieja de css)
 ---- FLEXBOX (forma moderna de diseñar elementos)
----- CSS GRID ()
+----- Permite construir diseños multidimencionales
+---- CSS GRID (Utilizado para proyectos de mayor complejidad)
 
 
 -- RESPONSIVE UNITS
