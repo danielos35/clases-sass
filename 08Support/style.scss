@@ -1,0 +1,17 @@
+.background{
+    
+    background-image: url(./test.jpg);
+
+
+
+    // Si la propiedad es compatible, entoces aplicarla en el navegador (funciona como un condicional)
+
+    @supports(background-color: red){
+        background-color: red;
+    }
+
+
+    @media (min-resolution: 192dp) and (min-width:37.5em){
+           background-image: url(./test.jpg);
+    }
+} 
