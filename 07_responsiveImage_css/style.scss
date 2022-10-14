@@ -1,0 +1,11 @@
+.background{
+    
+    background-image: url(./test.jpg);
+
+
+    // Podemos indicar dpi, lo que nos permite monitorear la densidad de pixeles
+    // Unidades CSS: w3schools.com/cssref/css_units.asp
+    @media (min-resolution: 192dp) and (min-width:37.5em){
+           background-image: url(./test.jpg);
+    }
+} 
