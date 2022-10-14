@@ -1,0 +1,37 @@
+/*
+
+
+FlexBox
+- Es un modulo de CSS3
+-- Permite alinear elementos entre si en diferentes direcciones y ordenes
+-- Su proposito es darle al contenedor la posibilidad de expandirse
+
+
+CONCEPTS
+
+-- Flex container: contenedor donde usamos flexbox
+-- Flex items: elementos del contenedor
+-- Flex axes: dirección en la que se presentan los elementos 
+
+
+Propieties
+
+
+
+CONTAINER
+
+-- Flex directions: row | row-reverse | column | column-reverse
+-- flex-wrap: nowrap: | wrap | wrap-reverse (ajustarse en el contenedor en caso de que no se tenga el suficiente espacio)
+-- Justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly
+-- aling-items: stretch | flex-start | flex-end  | center | baseline
+-- aling-content: stretch | flex-start | flex-end | center |space-between | space-around (alinear elementos en caso que se tenga mas de una fila)
+
+
+ITEM
+
+-- aling-self: auto | stretch | flex-start | flex-end | center | baseline 
+-- order:<integers> 0 orden de los elementos 
+-- flex-grow: 0 
+-- flex-shrink: 0 
+-- flex-basis: 0 
+*/
