@@ -23,6 +23,8 @@ CONTAINER
 -- Flex directions: row | row-reverse | column | column-reverse
 -- flex-wrap: nowrap: | wrap | wrap-reverse (ajustarse en el contenedor en caso de que no se tenga el suficiente espacio)
 -- Justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly
+--- space around coloca el mismo espacio a cada lado del componente  (teniendo dos espacios entre componentes aledaoños)
+--- space evenly coloca el mismo espacio a cada lado 
 -- aling-items: stretch | flex-start | flex-end  | center | baseline
 -- aling-content: stretch | flex-start | flex-end | center |space-between | space-around (alinear elementos en caso que se tenga mas de una fila)
 
@@ -35,3 +37,25 @@ ITEM
 -- flex-shrink: 0 
 -- flex-basis: 0 
 */
+
+.margin{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background: red;
+    padding: 10px;
+
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.item{
+    background: orange;
+    padding: 40px;
+    margin: 30px;
+    font-size: 40px;
+}
