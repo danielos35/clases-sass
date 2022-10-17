@@ -25,9 +25,19 @@ CONTAINER
 -- Justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly
 --- space around coloca el mismo espacio a cada lado del componente  (teniendo dos espacios entre componentes aledaoños)
 --- space evenly coloca el mismo espacio a cada lado 
+--- flex-end
+---flex-start
 -- aling-items: stretch | flex-start | flex-end  | center | baseline
+--- flex-start
+--- flex-end
+--- strecth: estira los demas elementos para que coincidan con la altura
+--- baseline: alinea el texto con el resto de los elementos
 -- aling-content: stretch | flex-start | flex-end | center |space-between | space-around (alinear elementos en caso que se tenga mas de una fila)
 
+
+Notes:
+
+--- En column los axes se ajustan, por tal las propiedades también
 
 ITEM
 
