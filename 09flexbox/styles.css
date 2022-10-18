@@ -41,9 +41,17 @@ Notes:
 
 ITEM
 
--- aling-self: auto | stretch | flex-start | flex-end | center | baseline 
+-- aling-self: auto | stretch | flex-start | flex-end | center | baseline
+--- baseline:
+
 -- order:<integers> 0 orden de los elementos 
--- flex-grow: 0 
+--- Order colocará el elemento en el lugar que le indiquemos mediante un entero
+---- Todos los elementos tienen por defecto el cero 
+
+-- flex-grow: 0 | Es exactamento lo mismo que usar flex 
+--- Es la capacidad de un elemento para crecer
+--- 
+
 -- flex-shrink: 0 
 -- flex-basis: 0 
 */
