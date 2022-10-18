@@ -50,10 +50,18 @@ ITEM
 
 -- flex-grow: 0 | Es exactamento lo mismo que usar flex 
 --- Es la capacidad de un elemento para crecer
---- 
 
--- flex-shrink: 0 
--- flex-basis: 0 
+-- flex-shrink: 0
+---- Controla que tanto puede encogerse un elemento
+---- tiene como valor inicial 1
+-- NOTA
+--- Podemos configurar todos las propiedades dentro de flex
+    Flex: flex-grow flex-shrink flex-basis | flex: 0 0 300px;
+    
+
+-- flex-basis: 0
+---- con esta propiedad podemos establecer el ancho de un elementos
+
 */
 
 
