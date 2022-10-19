@@ -54,6 +54,7 @@ ITEM
 -- flex-shrink: 0
 ---- Controla que tanto puede encogerse un elemento
 ---- tiene como valor inicial 1
+
 -- NOTA
 --- Podemos configurar todos las propiedades dentro de flex
     Flex: flex-grow flex-shrink flex-basis | flex: 0 0 300px;
@@ -61,6 +62,8 @@ ITEM
 
 -- flex-basis: 0
 ---- con esta propiedad podemos establecer el ancho de un elementos
+
+-- flex-wrap:wrap: redistribulle los elementos en varias en caso de que estos no puedan ocupar la misma ilera 
 
 */
 
