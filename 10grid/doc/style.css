@@ -1,0 +1,44 @@
+.container {
+    background-color: red;
+    width: 1000px;
+    margin: 30px auto;
+
+    display: grid;
+    grid-template-rows: 150px 150px;
+    grid-template-columns: 150px 150px 150px;
+
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
+
+.item{
+    padding: 20px;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.item--1{
+    background-color: green;
+}
+
+.item--2{
+    background-color: yellow;
+}
+
+.item--3{
+    background-color: blue;
+}
+
+.item--4{
+    background-color: purple;
+}
+
+.item--5{
+    background-color: aqua;
+}
+
+.item--6{
+    background-color: brown;
+}
+
