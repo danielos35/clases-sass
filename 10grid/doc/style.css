@@ -4,8 +4,21 @@
     margin: 30px auto;
 
     display: grid;
-    grid-template-rows: 150px 150px;
-    grid-template-columns: 150px 150px 150px;
+
+
+
+
+    /* Una nueva función para repetir los tracks */
+    grid-template-rows: repeat(2, 150px);
+
+
+    /* 
+    Unidad fracional
+    Permite asignar el resto del contenedor a un elemento en grid, dividias en fracciones siendo 1 el total del espacio disponible
+    */
+
+    /* grid-template-columns: repeat(2,150px) 1fr; */
+    grid-template-columns: repeat(3,1fr);
 
     grid-row-gap: 30px;
     grid-column-gap: 30px;
