@@ -24,6 +24,11 @@
 
     grid-row-gap: 30px;
     grid-column-gap: 30px;
+
+    /* Grap:
+        agrega ancho al valor de los carriles del grid
+    */
+    gap: 80px;
 }
 
 .item{
